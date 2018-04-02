@@ -1,0 +1,258 @@
+.swiper-container {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.swiper-slide {
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+}
+
+.gallery-thumbs .swiper-slide {
+	width: 25%;
+	height: 100%;
+	opacity: 0.4;
+}
+
+.gallery-thumbs .swiper-slide-active {
+	opacity: 1;
+}
+
+.img_type {
+	position: absolute;
+	background: rgba(0, 0, 0, .7);
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	padding: 0.5px 0;
+	bottom: 0;
+}
+
+.pg_point:after {
+	content: '';
+	display: inline-block;
+	border: 6px solid red;
+	border-right: 6px solid transparent;
+	border-bottom: 6px solid transparent;
+	position: absolute;
+	top: 25px;
+	left: 27px;
+}
+
+.anchorBL {
+	display: none;
+}
+
+.swiper-container .swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+	pointer-events: initial;
+}
+
+.swiper-button-next.swiper-button-black,
+.swiper-button-prev.swiper-button-black {
+	-webkit-background-size: 18px 44px;
+	background-size: 18px 44px;
+	width: 12px;
+	height: 30px;
+	top: 68%;
+	background: url(/static/img/icon.png) no-repeat -185px -73px;
+}
+
+.swiper-button-next.swiper-button-black {
+	background-position: -202px -73px;
+	right: 3px;
+}
+
+.swiper-button-prev.swiper-button-black {
+	left: 3px;
+}
+/*分享关注及预约看房*/
+/*.roomInfo .share{position:absolute; top:10px;right:32px;padding: 3px 8px;}*/
+.roomInfo .share a{position:relative;display: inline-block;margin-right:5px;
+    height: 26px;line-height: 26px;font-size:14px;color:#000;z-index:6;}
+.roomInfo .share a b{/*position: absolute; top:0px;left:25%;*/display: inline-block; width:26px;height:26px;
+    background:url(../img/icon.png) no-repeat;vertical-align: middle;}
+.pg_yuyue{
+	width: 30px;
+	overflow: hidden;
+	transition: all 0.3s linear;
+}
+.pg_fx{
+	width: 30px;
+	overflow: hidden;
+	transition: all 0.3s linear;
+}
+.roomInfo .share a:hover {
+	width: 90px;
+}
+.roomInfo .share a b.yy{background-position:-26px -186px;}
+.roomInfo .share a b.fx{top:3px;background-position:-56px -186px;}
+.roomInfo .share a span{font-size:14px;color:#fff;opacity: 0;}
+/* 2017/12/14 图片大图的轮播样式 */
+
+.bigImg{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.86);
+	z-index: 99;
+}
+.bigImg .swiper-container {
+	/* width: 810px; */
+	margin-left: auto;
+	margin-right: auto;
+}
+.bigImg  .swiper-slide {
+	background-size: cover;
+	background-position: center;
+}
+.bigImg  .gallery-top1 {
+	/* height: 540px;
+	width: 810px; */
+	height: 71vh;
+    width: 100%;
+}
+.bigImg .gallery-thumbs1 {
+	/* width: 760px; */
+	width: 100vh;
+	/* height: 87px; */
+	height: 7.6vh;
+	box-sizing: border-box;
+	/* padding: 10px 0; */
+	/* background: #000; */
+	/* margin-top: 10px; */
+	margin-top: 4.4vh;
+}
+.bigImg .gallery-thumbs1 .swiper-slide {
+	height: 100%;
+	opacity: 0.4;
+	cursor: pointer;
+}
+.bigImg .gallery-thumbs1 .swiper-slide-active {
+	opacity: 1;
+}
+.pagination_cot{
+	display: inline-block;
+    width: 83px;
+    height: 30px;
+    background: rgba(0,0,0,.7);
+    line-height: 30px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+}
+.page_type{
+	margin-right: 2px;
+}
+.bigImg_cot{
+	/* width: 810px;
+	height: 628px; */
+	width: 106.7vh;
+    height: 83vh;
+	position: absolute;
+	left: calc(50% - 405px);
+	/* top: calc(50% - 300px); */
+	background: rgba(0,0,0,.8);
+	top: 10%;
+    bottom: 10%;
+}
+.gallery_thumbs_next{
+	position: absolute;
+	width: 1.8vh;
+	height: 7.6vh;
+	bottom: 0;
+	right: 0;
+	background: url('/static/img/right.png') no-repeat;
+	cursor: pointer;
+	background-size:contain; 
+}
+.gallery_thumbs_prev{
+	position: absolute;
+	bottom: 0;
+	width: 1.8vh;
+	height: 7.6vh;
+	background: url('/static/img/left.png') no-repeat;
+	cursor: pointer;
+	background-size:contain; 
+}
+.gallery_top1_prev{
+	position: absolute;
+	width: 36px;
+	height: 62px;
+	top: calc(50% - 87px);
+	left: -110px;
+	background: url('/static/img/big_left.png') no-repeat;
+	cursor: pointer;
+}
+.gallery_top1_next{
+	position: absolute;
+	width: 36px;
+	height: 62px;
+	top: calc(50% - 87px);
+	right: -110px;
+	background: url('/static/img/big_right.png') no-repeat;
+	cursor: pointer;
+}
+.big_close{
+	position: absolute;
+	width: 46px;
+	height: 46px;
+	right: -20vh;
+	top: -9vh;
+	background: url('/static/img/big_close.png') no-repeat;
+	cursor: pointer;
+}
+.gallery-thumbs1 .swiper-button-next,.gallery-thumbs1 .swiper-button-prev,.gallery-top1 .swiper-button-prev,.gallery-top1 .swiper-button-next{
+	display: none
+}
+/* 详情页位于网页中间的大图的样式 2017/12/14 */
+.houseBigImgs_cot{
+	overflow: hidden;
+}
+.houseBigImgs_cot span{
+	display: block;
+	width: 580px;
+	height: 386px;
+	float: left;
+	position: relative;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+.houseBigImgs_cot span i{
+	position: absolute;
+	background: rgba(0,0,0,.7);
+	border-radius:3px; 
+	padding: 6px 10px;
+	color: #fff;
+	font-size: 14px;
+	bottom: 10px;
+	left: 262px;
+}
+.houseBigImgs_cot img{
+	width: 580px;
+	height: 386px;
+}
+.houseBigImgs_cot span:nth-child(odd){
+	margin-right: 20px;
+}
+.houseBigImgs_btn{
+	text-align: center;
+	height: 42px;
+	line-height: 42px;
+	margin: 40px 0 30px 0;
+	display: none;
+}
+.houseBigImgs_btn span{
+	background: #330033;
+	border-radius: 3px;
+	box-shadow: 0 2px 4px 0 #2C2C2C;
+	color: #fff;
+	font-size: 14px;
+	padding: 11px 49px;
+	cursor: pointer;
+}
